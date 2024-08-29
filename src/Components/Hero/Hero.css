@@ -1,0 +1,61 @@
+:root {
+    --secondary-text-color: #fff;
+    --primary-text-color: #111;
+    --banner:linear-gradient(90deg, rgb(210, 210, 210) 0%, rgb(15, 1, 1) 100%);
+    /*button*/
+    --button-color:#050A44;
+    /*font*/
+    --font-helvetica:Arial, Helvetica, sans-serif;
+  }
+.hero {
+  height: 695px;
+  background:var(--banner);
+  display: flex;
+  padding: 0 100px;
+} 
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin-left: 80px;
+  line-height: 1.1;
+}
+.hero-left h3 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: var(--font-helvetica);
+  color: var(--primary-text-color);
+}
+.hero-left p {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--primary-text-color);
+}
+.hero-latest-btn {
+  width: 250px;
+  height: 60px;
+  border-radius: 16px;
+  padding: 5px;
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+  font-family: "poppins",sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-right img{
+  height: 695px;
+  width: 500px;
+  object-fit: cover;
+}
