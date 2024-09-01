@@ -7,11 +7,12 @@
     --button-color: #050a44;
   }
 .footer{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 .footer-logo{
     display: flex;
@@ -22,6 +23,8 @@
     color:var(--primary-text-color);
     font-size: 30px;
     font-weight: 700;
+    margin-bottom: 0px;
+    font-family: var(--font-helvetica);
 }
 .footer-links{
     display: flex;
@@ -39,7 +42,6 @@
 }
 .footer-icons-container{
     padding: 10px;
-    padding-bottom:7px;
     background: var(--secondary-text-color);
     border: 1px solid var(--secondary-text-color);
 }
@@ -49,9 +51,8 @@
     align-items: center;
     gap: 20px;
     width: 100%;
-    margin-bottom: 5px;
     color: var(--primary-text-color);
-    font-size: 20px;
+    font-size: 16px;
 }
 .footer-copyright hr{
     width: 80%;

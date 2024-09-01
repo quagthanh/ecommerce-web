@@ -1,14 +1,18 @@
-import React from 'react'
-import './Footer.css'
-import footer_logo from '../Assets/thechip2.jpg'
-import instagram_icon from '../Assets/instagram_icon.png'
-import pintester_icon from '../Assets/pintester_icon.png'
-import whatsapp_icon from '../Assets/whatsapp_icon.png'
+import React from "react";
+import "./Footer.css";
+import footer_logo from "../Assets/thechip2.jpg";
+import instagram_icon from "../Assets/instagram_icon.png";
+import pintester_icon from "../Assets/pintester_icon.png";
+import whatsapp_icon from "../Assets/whatsapp_icon.png";
 const Footer = () => {
   return (
-    <div className='footer'>
+    <div className="footer">
       <div className="footer-logo">
-        <img style={{width:'90px',height:'90px'}} src={footer_logo} alt=''/>
+        <img
+          style={{ width: "90px", height: "90px" }}
+          src={footer_logo}
+          alt=""
+        />
         <p>TheChip</p>
       </div>
       <ul className="footer-links">
@@ -20,13 +24,13 @@ const Footer = () => {
       </ul>
       <div className="footer-social-icon">
         <div className="footer-icons-container">
-            <img src={instagram_icon} alt=''/>
+          <img src={instagram_icon} alt="" />
         </div>
         <div className="footer-icons-container">
-            <img src={pintester_icon} alt=''/>
+          <img src={pintester_icon} alt="" />
         </div>
         <div className="footer-icons-container">
-            <img src={whatsapp_icon} alt=''/>
+          <img src={whatsapp_icon} alt="" />
         </div>
       </div>
       <div className="footer-copyright">
@@ -34,7 +38,7 @@ const Footer = () => {
         <p>Copyright @ 2024 - All Right Reserved.</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

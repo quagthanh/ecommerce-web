@@ -2,6 +2,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 import Shop from "./Pages/Shop";
 import ShopCategory from "./Pages/ShopCategory";
 import Product from "./Pages/Product";
@@ -10,7 +11,7 @@ import LoginSignUp from "./Pages/LoginSignup";
 import Favorite from "./Pages/Favorite";
 function App() {
   return (
-    <div >
+    <div>
       <BrowserRouter>
         <Navbar/>
         <Routes>
@@ -25,6 +26,7 @@ function App() {
           <Route path="/login" element={<LoginSignUp />} />
           <Route path="/favorite" element={<Favorite />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
