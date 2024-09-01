@@ -1,7 +1,7 @@
 :root {
     --secondary-text-color: #fff;
     --primary-text-color: #111;
-    --banner:linear-gradient(180deg,rgb(83, 83, 92) 0%,rgb(182, 182, 176) 60%);
+    --banner:linear-gradient(90deg, rgb(210, 210, 210) 0%, rgb(159 154 154) 100%);
     /*button*/
     --button-color:#050A44;
     /*font*/
@@ -36,7 +36,7 @@
 .offers-left button{
     width: 250px;
     height: 60px;
-    border-radius: 16px;
+    border-radius: 80px;
     border: none;
     background-color: var(--primary-text-color);
     color: var(--secondary-text-color);
@@ -50,6 +50,7 @@
     font-family: "poppins",sans-serif;
     font-size: 20px;
     font-weight: 500;
+    transition: 0.8s;
 }
 .offers-right{
     flex: 1;

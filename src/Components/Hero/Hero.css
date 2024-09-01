@@ -1,7 +1,7 @@
 :root {
     --secondary-text-color: #fff;
     --primary-text-color: #111;
-    --banner:linear-gradient(90deg, rgb(210, 210, 210) 0%, rgb(15, 1, 1) 100%);
+    --banner1:linear-gradient(90deg, rgb(104, 104, 104) 0%, rgb(116, 116, 116) 100%);
     /*button*/
     --button-color:#050A44;
     /*font*/
@@ -9,7 +9,7 @@
   }
 .hero {
   height: 695px;
-  background:var(--banner);
+  background:var(--banner1);
   display: flex;
   padding: 0 100px;
 } 
@@ -35,8 +35,8 @@
 }
 .hero-latest-btn {
   width: 250px;
-  height: 60px;
-  border-radius: 16px;
+  height: 70px;
+  border-radius: 80px;
   padding: 5px;
   gap: 15px;
   display: flex;
