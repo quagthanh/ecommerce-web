@@ -4,21 +4,23 @@ import { ShopContext } from "../Context/ShopContext";
 import dropdown_icon from "../Components/Assets/dropdown_icon.png";
 import Item from "../Components/Item/Item";
 const ShopCategory = (props) => {
-  const { all_product } = useContext(ShopContext);
+  const  {all_product}  = useContext(ShopContext);
   return (
     <div className="shop-category">
-      <img className="banner-pages" src={props.banner} alt="" />
+      <img className="shopcategory-banner" src={props.banner} alt="" />
       <div className="shopcategory-indexSort">
         <p>
           <span>Showing 1-12</span> out of 36 products
         </p>
         <div className="shopcategory-sort">
-          <h6> Sort by alphabet</h6>
-          <img src={dropdown_icon} alt=" " />
-        </div>
-        <div className="shopcategory-sort">
-          <h6> Sort by price</h6>
-          <img src={dropdown_icon} alt=" " />
+          <div className="shopcategory-sort-child">
+            Sort by alphabet
+            <img src={dropdown_icon} alt=" " />
+          </div>
+          <div className="shopcategory-sort-child">
+            Sort by price
+            <img src={dropdown_icon} alt=" " />
+          </div>
         </div>
       </div>
       <div className="shopcategory-products">
@@ -27,6 +29,7 @@ const ShopCategory = (props) => {
             return (
               <Item
                 key={i}
+                id={item.id}
                 image={item.image}
                 name={item.name}
                 new_price={item.new_price}
@@ -37,6 +40,9 @@ const ShopCategory = (props) => {
             return null;
           }
         })}
+      </div>
+      <div className="shopcategory-loadmore">
+        Explore More
       </div>
     </div>
   );

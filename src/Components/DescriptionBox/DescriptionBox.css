@@ -1,0 +1,33 @@
+.descriptionbox{
+    margin: 120px 94px;
+}
+.descriptionbox-navigator{
+    display: flex;
+}
+.descriptionbox-nav-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: 16px;
+    font-weight: 600;
+    width: 170px;
+    height: 70px;
+    border: 1px solid #D0D0D0;
+}
+.descriptionbox-nav-box.fade1 {
+    background: #ececec;
+    color: #504f4f;
+}
+.descriptionbox-description{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid #D0D0D0;
+    padding: 48px;
+    padding-bottom: 70px;
+}
+.descriptionbox-description p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #504f4f;
+}

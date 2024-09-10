@@ -7,6 +7,7 @@ import whatsapp_icon from "../Assets/whatsapp_icon.png";
 const Footer = () => {
   return (
     <div className="footer">
+      <hr/>
       <div className="footer-logo">
         <img
           style={{ width: "90px", height: "90px" }}
@@ -34,7 +35,6 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-copyright">
-        <hr />
         <p>Copyright @ 2024 - All Right Reserved.</p>
       </div>
     </div>
